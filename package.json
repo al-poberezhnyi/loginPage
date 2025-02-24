@@ -10,8 +10,15 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@remixicon/react": "^4.6.0",
+        "classnames": "^2.5.1",
+        "date-fns": "^4.1.0",
+        "formik": "^2.4.6",
         "react": "^19.0.0",
-        "react-dom": "^19.0.0"
+        "react-dom": "^19.0.0",
+        "react-router": "^7.2.0",
+        "sass": "^1.85.0",
+        "yup": "^1.6.1"
     },
     "devDependencies": {
         "@eslint/js": "^9.19.0",
