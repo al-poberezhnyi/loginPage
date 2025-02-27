@@ -1,0 +1,16 @@
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.menu {
+    display: flex;
+    gap: 10px;
+    > a {
+        border: 1px solid #2e5315;
+        padding: 8px 10px;
+    }
+}

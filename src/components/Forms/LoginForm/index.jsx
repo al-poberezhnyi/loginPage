@@ -81,10 +81,12 @@ function LoginForm () {
                         <h4 className={styles.subTitle}>New Account?</h4>
                     </div>
 
-                    {/* <Link to='#'>Create Account</Link> */}
-                    <a className={styles.link} href='#'>
+                    <Link className={styles.link} to='/register'>
                         Create Account
-                    </a>
+                    </Link>
+                    {/* <a className={styles.link} href='#'>
+                        Create Account
+                    </a> */}
                 </div>
             </div>
         </div>
