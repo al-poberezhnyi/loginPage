@@ -1,0 +1,11 @@
+%df-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%fd-column-ai-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

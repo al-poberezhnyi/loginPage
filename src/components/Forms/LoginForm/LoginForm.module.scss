@@ -1,0 +1,190 @@
+@use './../../../common/variables' as v;
+@use './../../../common/tamplates';
+
+$main-color: #0078f0;
+
+//
+.loginForm {
+    font-family: 'Ubuntu', serif;
+    text-align: center;
+}
+
+.innerContainer {
+    @extend %df-center;
+
+    width: 100%;
+    min-width: 375px;
+    min-height: 100vh;
+}
+
+.loginFormContainer {
+    @extend %fd-column-ai-center;
+
+    width: 100%;
+    max-width: 600px;
+    height: 640px;
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 14px 0.1px #0078f040;
+}
+
+.loginImage {
+    @extend %df-center;
+
+    width: 100px;
+    height: 100px;
+
+    background-color: #0078f020;
+    border-radius: 50%;
+
+    position: relative;
+    top: -50px;
+    > img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.loginTitle {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $main-color;
+    padding-bottom: 28px;
+}
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    margin-bottom: 56px;
+}
+.formContainer {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.loginFormBtn {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    border: 2px solid $main-color;
+    background-color: #0078f020;
+    border-radius: 10px;
+    color: $main-color;
+    text-transform: uppercase;
+}
+.tetsLine {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    &::after {
+        background-color: transparent;
+        border-top: 1px solid #d5d9d9;
+        content: '';
+        display: block;
+        height: 1px;
+        margin-top: -1px;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        width: 100%;
+    }
+}
+.subTitle {
+    background-color: #fff;
+    color: #565959;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 0 8px 0 7px;
+    position: relative;
+    z-index: 2;
+}
+.link {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 20px;
+    border: 2px solid #0078f0;
+    border-radius: 10px;
+    background-color: #0078f020;
+    cursor: pointer;
+}
+
+//--inputs
+.inputContainer {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    > span {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 2px 2px;
+    }
+    > img {
+        position: absolute;
+        right: 18px;
+        top: 37px;
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+    }
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 2px solid #0078f0;
+    border-radius: 6px;
+    outline: none;
+    caret-color: #0078f0;
+    &:focus {
+        outline: 2px solid #8f8c8c;
+        outline-offset: 1px;
+    }
+}
+.valid {
+    border: 2px solid #1f6e26;
+}
+.invalid {
+    border: 2px solid #ba0933;
+}
+.errors {
+    color: #ba0933;
+    font-size: 12px;
+    position: absolute;
+    top: 74px;
+    left: 12px;
+    > img {
+        width: 12px;
+        height: 12px;
+        margin-right: 4px;
+    }
+}
+.inputSignedIn {
+    padding: 10px;
+    > span {
+        padding: 0 5px;
+    }
+    > a {
+        color: $main-color;
+    }
+}
